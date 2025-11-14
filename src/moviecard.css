@@ -1,0 +1,84 @@
+/* Main Page */
+.movie-gallery {
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.movie-gallery h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+/* Grid Layout */
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 35px;
+  justify-items: center;
+}
+
+/* Movie Card */
+.movie-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 300px;
+  height: 480px; /* reduced slightly so content fits */
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25);
+}
+
+/* Poster */
+.movie-poster {
+  width: 100%;
+  height: 350px; /* reduced poster height so text is visible */
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Movie Info */
+.movie-info {
+  padding: 18px;
+  text-align: left;
+  flex-grow: 1;
+  background-color: #fff;
+}
+
+.movie-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.movie-year {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.movie-rating {
+  font-size: 18px;
+  font-weight: bold;
+  color: #f39c12;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.star {
+  color: #f1c40f;
+  font-size: 20px;
+}
